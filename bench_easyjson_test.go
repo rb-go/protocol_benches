@@ -1,7 +1,11 @@
 // go test -bench=. -benchmem -cpu 1,4,8 -benchtime 10s -count 1 -cpuprofile=./results/cpu.out -memprofile=./results/mem.out bench_test.go > ./results/old.txt
 // go test -bench=. -benchmem -cpu 1,4,8 -benchtime 10s -count 1 -cpuprofile=./results/cpu.out -memprofile=./results/mem.out bench_test.go > ./results/new.txt
 // Compare by golang.org/x/tools/cmd/benchcmp
-// benchcmp ./results/old.txt ./results/new.txt > ./results/cmp.txt
+// benchcmp -changed ./results/go1.11.txt ./results/go1.12.txt > ./results/cmp_1.11-1.12.txt
+// benchcmp -changed ./results/go1.12.txt ./results/go1.13.txt > ./results/cmp_1.12-1.13.txt
+// benchcmp -changed ./results/go1.13.txt ./results/go.tip.txt > ./results/cmp_1.13-tip.txt
+// benchcmp -changed ./results/go1.11.txt ./results/go1.13.txt > ./results/cmp_1.11-1.13.txt
+// benchcmp -changed ./results/go1.11.txt ./results/go.tip.txt > ./results/cmp_1.11-tip.txt
 
 package jsonbench_test
 
