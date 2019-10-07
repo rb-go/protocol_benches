@@ -1,0 +1,31 @@
+goos: windows
+goarch: amd64
+pkg: github.com/riftbit/jsonBenches
+Benchmark_easyjson_Marshal-8                   	    1816	    680618 ns/op	  174994 B/op	      16 allocs/op
+Benchmark_easyjson_Marshal_lexer-8             	    1848	    655303 ns/op	  174991 B/op	      16 allocs/op
+Benchmark_easyjson_Unmarshal_Full-8            	    1236	    940131 ns/op	  320289 B/op	    1146 allocs/op
+Benchmark_easyjson_Unmarshal_Min-8             	    1262	    797940 ns/op	  320289 B/op	    1146 allocs/op
+Benchmark_easyjson_Unmarshal_Full_lexer-8      	    1236	    958738 ns/op	  320290 B/op	    1146 allocs/op
+Benchmark_easyjson_Unmarshal_Min_lexer-8       	    1462	    844735 ns/op	  320290 B/op	    1146 allocs/op
+Benchmark_ffjson_Marshal_simple-8              	    2307	    462506 ns/op	  182646 B/op	       2 allocs/op
+Benchmark_ffjson_Marshal_simple_pooling-8      	    2398	    457879 ns/op	  176254 B/op	       3 allocs/op
+Benchmark_ffjson_Marshal_generated-8           	    1999	    588794 ns/op	  434590 B/op	    1502 allocs/op
+Benchmark_ffjson_Unmarshal_Full_simple-8       	     466	   2598707 ns/op	  349666 B/op	    1659 allocs/op
+Benchmark_ffjson_Unmarshal_Min_simple-8        	     547	   2186475 ns/op	  349666 B/op	    1659 allocs/op
+Benchmark_ffjson_Unmarshal_Full_generated-8    	     274	   4430660 ns/op	  638456 B/op	    1687 allocs/op
+Benchmark_ffjson_Unmarshal_Min_generated-8     	     351	   3401857 ns/op	  637813 B/op	    1687 allocs/op
+Benchmark_jsoniterator_Marshal-8               	    2607	    479478 ns/op	  181348 B/op	       2 allocs/op
+Benchmark_jsoniterator_Marshal_fast-8          	    2607	    473341 ns/op	  181019 B/op	       2 allocs/op
+Benchmark_jsoniterator_Unmarshal_Full-8        	    1042	   1159307 ns/op	  613879 B/op	    2816 allocs/op
+Benchmark_jsoniterator_Unmarshal_Min-8         	    1120	   1101786 ns/op	  613877 B/op	    2816 allocs/op
+Benchmark_jsoniterator_Unmarshal_Full_fast-8   	    1060	   1130189 ns/op	  603565 B/op	    2108 allocs/op
+Benchmark_jsoniterator_Unmarshal_Min_fast-8    	    1070	   1082244 ns/op	  603566 B/op	    2108 allocs/op
+Benchmark_msgpack_vmihailenco_Marshal-8        	   30927	     34080 ns/op	  164080 B/op	       6 allocs/op
+Benchmark_msgpack_vmihailenco_Unmarshal-8      	    2857	    445223 ns/op	  217744 B/op	    2914 allocs/op
+Benchmark_std_Marshal-8                        	    2552	    471003 ns/op	  183035 B/op	       2 allocs/op
+Benchmark_std_Unmarshal_Full-8                 	     460	   2610890 ns/op	  349664 B/op	    1659 allocs/op
+Benchmark_std_Unmarshal_Min-8                  	     558	   2186376 ns/op	  349666 B/op	    1659 allocs/op
+PASS
+ok  	github.com/riftbit/jsonBenches	33.549s
+?   	github.com/riftbit/jsonBenches/structs	[no test files]
+?   	github.com/riftbit/jsonBenches/vars	[no test files]
