@@ -28,4 +28,4 @@ install:
   - go get -d
 
 script:
-  - go test -timeout 30m -bench=. -benchmem -cpu 1,4,8 -benchtime 5s -count 1
+  - go test -timeout 30m -bench=. -benchmem -cpu 4 -benchtime 5s -count 1
