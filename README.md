@@ -13,10 +13,12 @@ Easyjson в результате тестов оказался самый мед
 
 Тесты с пометкой Min - это minified json, у него убраны переносы строк и лишние пробелы. Full - это отформатированный json с отступами и переносами.
 
+
+### golang 1.13 on windows 10 x64 (ssd hdd)
 ```
 goos: windows
 goarch: amd64
-pkg: github.com/riftbit/jsonBenches
+pkg: github.com/riftbit/protocol_benches
 
 Benchmark_msgpack_vmihailenco_Marshal-8        	  191079	     31730 ns/op	  164080 B/op	       6 allocs/op
 Benchmark_ffjson_Marshal_simple_pooling-8      	   13440	    446057 ns/op	  175394 B/op	       3 allocs/op
@@ -48,4 +50,26 @@ PASS
 ok  	github.com/riftbit/jsonBenches	174.960s
 ?   	github.com/riftbit/jsonBenches/structs	[no test files]
 ?   	github.com/riftbit/jsonBenches/vars	[no test files]
+```
+
+
+### golang 1.11.13 linux (travis ci)
+```
+
+```
+
+
+### golang 1.12.10 linux (travis ci)
+```
+
+```
+
+### golang 1.13.1 linux (travis ci)
+```
+
+```
+
+### golang tip linux (travis ci) on 07 Oct 2019
+```
+
 ```
