@@ -1,0 +1,29 @@
+goos: linux
+goarch: amd64
+pkg: github.com/riftbit/protocol_benches
+Benchmark_easyjson_Marshal-4                   	   10000	    608611 ns/op	  173778 B/op	      16 allocs/op
+Benchmark_easyjson_Marshal_lexer-4             	   10000	    597866 ns/op	  173750 B/op	      16 allocs/op
+Benchmark_easyjson_Unmarshal_Full-4            	   10000	   1052504 ns/op	  320289 B/op	    1146 allocs/op
+Benchmark_easyjson_Unmarshal_Min-4             	   10000	    904700 ns/op	  320289 B/op	    1146 allocs/op
+Benchmark_easyjson_Unmarshal_Full_lexer-4      	   10000	   1051424 ns/op	  320290 B/op	    1146 allocs/op
+Benchmark_easyjson_Unmarshal_Min_lexer-4       	   10000	    893878 ns/op	  320290 B/op	    1146 allocs/op
+Benchmark_ffjson_Marshal_simple-4              	   20000	    443825 ns/op	  176237 B/op	       2 allocs/op
+Benchmark_ffjson_Marshal_simple_pooling-4      	   20000	    445067 ns/op	  176185 B/op	       3 allocs/op
+Benchmark_ffjson_Marshal_generated-4           	   10000	    651874 ns/op	  434165 B/op	    1502 allocs/op
+Benchmark_ffjson_Unmarshal_Full_simple-4       	    2000	   3321658 ns/op	  349414 B/op	    1655 allocs/op
+Benchmark_ffjson_Unmarshal_Min_simple-4        	    3000	   2884785 ns/op	  349412 B/op	    1655 allocs/op
+Benchmark_ffjson_Unmarshal_Full_generated-4    	   10000	    861470 ns/op	  214966 B/op	    1011 allocs/op
+Benchmark_ffjson_Unmarshal_Min_generated-4     	   10000	    811723 ns/op	  214991 B/op	    1011 allocs/op
+Benchmark_jsoniterator_Marshal-4               	   20000	    473627 ns/op	  179246 B/op	       2 allocs/op
+Benchmark_jsoniterator_Marshal_fast-4          	   20000	    463498 ns/op	  177788 B/op	       2 allocs/op
+Benchmark_jsoniterator_Unmarshal_Full-4        	    5000	   1271024 ns/op	  613786 B/op	    2816 allocs/op
+Benchmark_jsoniterator_Unmarshal_Min-4         	    5000	   1221668 ns/op	  613788 B/op	    2816 allocs/op
+Benchmark_jsoniterator_Unmarshal_Full_fast-4   	    5000	   1252551 ns/op	  603478 B/op	    2108 allocs/op
+Benchmark_jsoniterator_Unmarshal_Min_fast-4    	   10000	   1188355 ns/op	  603478 B/op	    2108 allocs/op
+Benchmark_msgpack_vmihailenco_Marshal-4        	  200000	     33898 ns/op	  164080 B/op	       6 allocs/op
+Benchmark_msgpack_vmihailenco_Unmarshal-4      	   20000	    493865 ns/op	  217745 B/op	    2914 allocs/op
+Benchmark_std_Marshal-4                        	   20000	    448964 ns/op	  176529 B/op	       2 allocs/op
+Benchmark_std_Unmarshal_Full-4                 	    2000	   3305551 ns/op	  349413 B/op	    1655 allocs/op
+Benchmark_std_Unmarshal_Min-4                  	    3000	   2896155 ns/op	  349412 B/op	    1655 allocs/op
+PASS
+ok  	github.com/riftbit/protocol_benches	228.664s
